@@ -1,0 +1,21 @@
+# Dependencies and build output
+node_modules/
+dist/
+.netlify/
+
+# Secrets and local settings: never commit
+.env.local
+.env.*.local
+supabase/.env.secrets
+**/supabase/.env.secrets
+*.pem
+
+# Local tools and OS files
+.claude/
+.mcp.json
+*.log
+.DS_Store
+Thumbs.db
+
+# TypeScript build cache
+*.tsbuildinfo

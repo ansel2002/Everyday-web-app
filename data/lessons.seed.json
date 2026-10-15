@@ -1,0 +1,953 @@
+{
+  "version": 1,
+  "months": [
+    {
+      "month": 1,
+      "name": "January",
+      "theme": "Fresh starts",
+      "lessons": [
+        {
+          "id": "m01-l1",
+          "month": 1,
+          "order": 1,
+          "title": "Begin where you are",
+          "body": "A fresh start does not need a clean slate or a perfect plan. It only needs a small, honest first step from exactly where you are today.",
+          "tryThis": "Choose one tiny thing to begin this week and do the first two minutes of it.",
+          "journalPrompt": "What is one small thing you would like to begin, and what is its first two minutes?"
+        },
+        {
+          "id": "m01-l2",
+          "month": 1,
+          "order": 2,
+          "title": "Choose a gentle word",
+          "body": "Instead of a long list of resolutions, a single word can guide the month softly. It works like a compass, not a rule.",
+          "tryThis": "Pick one word for the month, such as steady, curious or kind, and write it where you will see it.",
+          "journalPrompt": "Which word feels right for this month, and why?"
+        },
+        {
+          "id": "m01-l3",
+          "month": 1,
+          "order": 3,
+          "title": "Clear one small space",
+          "body": "A cleared corner can feel like a clearer mind. You are not tidying everything, just making room for one thing.",
+          "tryThis": "Clear one surface, such as a desk, a shelf or a bag, in five minutes.",
+          "journalPrompt": "How did the cleared space feel compared with before?"
+        },
+        {
+          "id": "m01-l4",
+          "month": 1,
+          "order": 4,
+          "title": "Keep the promise small",
+          "body": "Small promises are easier to keep, and keeping them builds trust in yourself. Make it so small that a hard day cannot stop it.",
+          "tryThis": "Shrink one goal until it takes under two minutes, then do it.",
+          "journalPrompt": "What did you shrink, and what became possible because of it?"
+        },
+        {
+          "id": "m01-l5",
+          "month": 1,
+          "order": 5,
+          "title": "Let the old year go",
+          "body": "You can carry the lessons of last year without carrying its weight. Naming what helped lets the rest soften.",
+          "tryThis": "Write down three things from last year you are glad of, and one you are ready to leave behind.",
+          "journalPrompt": "What are you glad to bring with you, and what are you ready to put down?"
+        },
+        {
+          "id": "m01-l6",
+          "month": 1,
+          "order": 6,
+          "title": "Plan one good day",
+          "body": "Rather than planning the whole year, imagine one ordinary good day and notice what it holds.",
+          "tryThis": "Sketch a good day in a few lines, then choose one part of it to make real this week.",
+          "journalPrompt": "What does a good ordinary day look like for you?"
+        },
+        {
+          "id": "m01-l7",
+          "month": 1,
+          "order": 7,
+          "title": "Tell someone your intention",
+          "body": "Saying a hope out loud to someone kind makes it feel real, and a little lighter to carry.",
+          "tryThis": "Share one intention with a person you trust, and ask nothing of them.",
+          "journalPrompt": "How did it feel to say it out loud?"
+        },
+        {
+          "id": "m01-l8",
+          "month": 1,
+          "order": 8,
+          "title": "Start again, any day",
+          "body": "Every day is a fresh start, not only the first of January. Beginning again is a skill, and it is allowed to be practised.",
+          "tryThis": "Think of something you set aside and begin again with the smallest step.",
+          "journalPrompt": "What would starting again look like, done kindly?"
+        }
+      ]
+    },
+    {
+      "month": 2,
+      "name": "February",
+      "theme": "Kindness",
+      "lessons": [
+        {
+          "id": "m02-l1",
+          "month": 2,
+          "order": 1,
+          "title": "Kindness to yourself first",
+          "body": "Most of us speak to ourselves more harshly than we would to a friend. A gentler voice is not weakness, it is steadier fuel.",
+          "tryThis": "When you notice a harsh thought today, say what you would say to a friend instead.",
+          "journalPrompt": "What would you say to a friend in your situation today?"
+        },
+        {
+          "id": "m02-l2",
+          "month": 2,
+          "order": 2,
+          "title": "One small kindness",
+          "body": "Kindness does not need to be big. A door held, a message sent or a simple thank you all count.",
+          "tryThis": "Do one unrequested small kindness for someone today.",
+          "journalPrompt": "What did you do, and how did it feel?"
+        },
+        {
+          "id": "m02-l3",
+          "month": 2,
+          "order": 3,
+          "title": "Listen without fixing",
+          "body": "Often people need to be heard more than helped. Listening fully is a quiet form of care.",
+          "tryThis": "In one conversation today, listen without giving advice.",
+          "journalPrompt": "What did you notice when you only listened?"
+        },
+        {
+          "id": "m02-l4",
+          "month": 2,
+          "order": 4,
+          "title": "Say thank you properly",
+          "body": "A specific thank you lands deeper than a general one. Naming exactly what someone did lets them know it mattered.",
+          "tryThis": "Send a thank-you that names what the person did and why it helped.",
+          "journalPrompt": "Who did you thank, and what did you name?"
+        },
+        {
+          "id": "m02-l5",
+          "month": 2,
+          "order": 5,
+          "title": "Forgive a small thing",
+          "body": "Forgiving does not mean the thing was fine. It means you stop carrying it for now, and feel a little lighter.",
+          "tryThis": "Choose a minor irritation and decide to let it go today.",
+          "journalPrompt": "What did you let go of, and what changed?"
+        },
+        {
+          "id": "m02-l6",
+          "month": 2,
+          "order": 6,
+          "title": "Be kind to your body",
+          "body": "Your body works for you all day. Small acts of care, like water, rest and stretching, are a way of saying thanks.",
+          "tryThis": "Do one kind thing for your body, such as water, a stretch or an early night.",
+          "journalPrompt": "What did your body seem to need today?"
+        },
+        {
+          "id": "m02-l7",
+          "month": 2,
+          "order": 7,
+          "title": "Assume the best",
+          "body": "When someone's behaviour puzzles you, try one kinder explanation. It costs nothing and can change the whole moment.",
+          "tryThis": "Next time someone annoys you, think of one kind reason they might have acted that way.",
+          "journalPrompt": "What kinder explanation did you find?"
+        },
+        {
+          "id": "m02-l8",
+          "month": 2,
+          "order": 8,
+          "title": "Receive kindness",
+          "body": "Accepting a compliment or help gracefully is a gift to the giver. You can simply say thank you.",
+          "tryThis": "Accept one compliment or offer of help today without deflecting it.",
+          "journalPrompt": "What was it like to simply receive?"
+        }
+      ]
+    },
+    {
+      "month": 3,
+      "name": "March",
+      "theme": "Energy",
+      "lessons": [
+        {
+          "id": "m03-l1",
+          "month": 3,
+          "order": 1,
+          "title": "Notice your energy",
+          "body": "Energy rises and falls through the day. Noticing your own pattern helps you plan around it instead of fighting it.",
+          "tryThis": "Three times today, note whether your energy feels high, medium or low.",
+          "journalPrompt": "When in the day did you feel most awake?"
+        },
+        {
+          "id": "m03-l2",
+          "month": 3,
+          "order": 2,
+          "title": "Move a little",
+          "body": "A short walk or stretch can lift your mood and wake your mind. It does not need to be exercise to count.",
+          "tryThis": "Move for five minutes, in any way you like.",
+          "journalPrompt": "How did you feel before and after moving?"
+        },
+        {
+          "id": "m03-l3",
+          "month": 3,
+          "order": 3,
+          "title": "Drink water first",
+          "body": "Tiredness is sometimes just thirst. A glass of water is one of the simplest ways to look after yourself.",
+          "tryThis": "Have a glass of water before your first drink or snack today.",
+          "journalPrompt": "Did you notice any difference in how you felt?"
+        },
+        {
+          "id": "m03-l4",
+          "month": 3,
+          "order": 4,
+          "title": "Fresh air and light",
+          "body": "Daylight helps set your body's rhythm. A few minutes outside can brighten both your morning and your mood.",
+          "tryThis": "Spend ten minutes outdoors in daylight, or beside a bright window.",
+          "journalPrompt": "What did you notice around you?"
+        },
+        {
+          "id": "m03-l5",
+          "month": 3,
+          "order": 5,
+          "title": "Protect your sleep",
+          "body": "Rest is not a reward for finishing, it is what makes the next day possible. Small evening habits add up.",
+          "tryThis": "Choose one thing to do tonight to wind down, such as dimming the lights or putting your phone away.",
+          "journalPrompt": "What helped you settle for sleep?"
+        },
+        {
+          "id": "m03-l6",
+          "month": 3,
+          "order": 6,
+          "title": "Do the easy thing first",
+          "body": "A small, easy win can start momentum for the harder things. You do not have to begin with the biggest task.",
+          "tryThis": "Begin your day with one quick, easy task and notice the lift.",
+          "journalPrompt": "How did starting small change the rest of your day?"
+        },
+        {
+          "id": "m03-l7",
+          "month": 3,
+          "order": 7,
+          "title": "Take real breaks",
+          "body": "Short breaks away from screens restore focus better than pushing through. Pausing is part of working well.",
+          "tryThis": "Take two five-minute breaks today with no phone.",
+          "journalPrompt": "What did you do in your break, and how did you feel after?"
+        },
+        {
+          "id": "m03-l8",
+          "month": 3,
+          "order": 8,
+          "title": "Eat to feel steady",
+          "body": "Regular meals and enough variety help your energy stay even, and your mood too. There is no need for rules, only attention.",
+          "tryThis": "Notice how you feel after your next meal, and what you might want more of.",
+          "journalPrompt": "What kind of meal leaves you feeling steady?"
+        }
+      ]
+    },
+    {
+      "month": 4,
+      "name": "April",
+      "theme": "Growth",
+      "lessons": [
+        {
+          "id": "m04-l1",
+          "month": 4,
+          "order": 1,
+          "title": "Stay curious",
+          "body": "Growth begins with a question. Curiosity makes learning feel like play instead of pressure.",
+          "tryThis": "Ask one why or how about something ordinary today and find out.",
+          "journalPrompt": "What did you get curious about?"
+        },
+        {
+          "id": "m04-l2",
+          "month": 4,
+          "order": 2,
+          "title": "Learn something tiny",
+          "body": "Ten minutes a day of learning adds up quietly. You are building a habit of learning, not racing to a goal.",
+          "tryThis": "Spend ten minutes on something you would like to learn.",
+          "journalPrompt": "What did you learn, however small?"
+        },
+        {
+          "id": "m04-l3",
+          "month": 4,
+          "order": 3,
+          "title": "Make friends with mistakes",
+          "body": "Mistakes are how most skills are built. Treating them as information keeps you moving.",
+          "tryThis": "Think of a recent mistake and write one thing it taught you.",
+          "journalPrompt": "What did a recent mistake teach you?"
+        },
+        {
+          "id": "m04-l4",
+          "month": 4,
+          "order": 4,
+          "title": "Try a beginner's mind",
+          "body": "Being new at something is uncomfortable, and also a gift. Beginners notice what experts have stopped seeing.",
+          "tryThis": "Do one thing you are a beginner at, and enjoy being new.",
+          "journalPrompt": "What was it like to be a beginner?"
+        },
+        {
+          "id": "m04-l5",
+          "month": 4,
+          "order": 5,
+          "title": "Ask for help",
+          "body": "Asking for help is a strength, and most people are glad to give it. Growth rarely happens alone.",
+          "tryThis": "Ask someone for advice or help with one small thing.",
+          "journalPrompt": "What did you ask, and how did they respond?"
+        },
+        {
+          "id": "m04-l6",
+          "month": 4,
+          "order": 6,
+          "title": "Notice how far you've come",
+          "body": "We forget our own progress quickly. Looking back shows how much has already changed.",
+          "tryThis": "Write down three things you can do now that you could not do a year ago.",
+          "journalPrompt": "Which of those are you proudest of?"
+        },
+        {
+          "id": "m04-l7",
+          "month": 4,
+          "order": 7,
+          "title": "Read or listen widely",
+          "body": "A new idea from a book, a podcast or a person can shift how you see things. You only need one idea to start.",
+          "tryThis": "Read or listen to something for ten minutes that is outside your usual interests.",
+          "journalPrompt": "What idea stayed with you?"
+        },
+        {
+          "id": "m04-l8",
+          "month": 4,
+          "order": 8,
+          "title": "Plant one seed",
+          "body": "Growth is slow and mostly unseen, like a seed in soil. Choose one small thing to tend, and trust the time.",
+          "tryThis": "Choose one thing to nurture over the coming months, and take its first small step.",
+          "journalPrompt": "What are you planting, and how will you tend it?"
+        }
+      ]
+    },
+    {
+      "month": 5,
+      "name": "May",
+      "theme": "Focus",
+      "lessons": [
+        {
+          "id": "m05-l1",
+          "month": 5,
+          "order": 1,
+          "title": "Do one thing at a time",
+          "body": "Switching between tasks costs more than we feel. One thing, fully, is often faster and calmer.",
+          "tryThis": "Pick one task and give it your full attention for ten minutes.",
+          "journalPrompt": "What happened when you did only one thing?"
+        },
+        {
+          "id": "m05-l2",
+          "month": 5,
+          "order": 2,
+          "title": "Quiet the phone",
+          "body": "Every notification pulls attention away. A few phone-free minutes give your mind room to settle.",
+          "tryThis": "Put your phone out of sight for one stretch of work or rest.",
+          "journalPrompt": "What was it like without your phone nearby?"
+        },
+        {
+          "id": "m05-l3",
+          "month": 5,
+          "order": 3,
+          "title": "Choose your top one",
+          "body": "Most days have one thing that matters most. Naming it first makes the rest feel lighter.",
+          "tryThis": "Choose one priority for today and do it before anything else.",
+          "journalPrompt": "What was your top one, and how did it go?"
+        },
+        {
+          "id": "m05-l4",
+          "month": 5,
+          "order": 4,
+          "title": "Work in short bursts",
+          "body": "Focusing for a short, set time and then resting is easier than trying to concentrate for hours.",
+          "tryThis": "Work for twenty-five minutes without interruption, then rest for five.",
+          "journalPrompt": "How did the short burst feel?"
+        },
+        {
+          "id": "m05-l5",
+          "month": 5,
+          "order": 5,
+          "title": "Prepare your space",
+          "body": "A calm, ready space makes focus easier. A few small changes can tell your mind it is time to begin.",
+          "tryThis": "Set up your workspace before you start: water, light, and only what you need.",
+          "journalPrompt": "What helps you settle into focus?"
+        },
+        {
+          "id": "m05-l6",
+          "month": 5,
+          "order": 6,
+          "title": "Notice when you drift",
+          "body": "Minds wander, and that is normal. The skill is noticing kindly and returning, again and again.",
+          "tryThis": "When you drift today, notice it without judgement and return to your task.",
+          "journalPrompt": "What tends to pull your attention away?"
+        },
+        {
+          "id": "m05-l7",
+          "month": 5,
+          "order": 7,
+          "title": "Finish one small thing",
+          "body": "Completing something, even something small, feels good and clears mental space.",
+          "tryThis": "Finish one small task you have been putting off.",
+          "journalPrompt": "How did finishing it feel?"
+        },
+        {
+          "id": "m05-l8",
+          "month": 5,
+          "order": 8,
+          "title": "Say no gently",
+          "body": "Protecting your attention means saying no to some things. You can decline kindly and still care.",
+          "tryThis": "Politely decline one non-essential request today.",
+          "journalPrompt": "What did you say no to, and what did it make room for?"
+        }
+      ]
+    },
+    {
+      "month": 6,
+      "name": "June",
+      "theme": "Rest",
+      "lessons": [
+        {
+          "id": "m06-l1",
+          "month": 6,
+          "order": 1,
+          "title": "Rest is not laziness",
+          "body": "Rest is part of how you do well, not a reward you must earn. Your body and mind do their best work when they are allowed to recover.",
+          "tryThis": "Allow yourself ten minutes of rest today, without justifying it.",
+          "journalPrompt": "What kind of rest do you need most right now?"
+        },
+        {
+          "id": "m06-l2",
+          "month": 6,
+          "order": 2,
+          "title": "Breathe slowly",
+          "body": "A few slow breaths can calm your body quickly. Breathing out for longer than you breathe in helps most.",
+          "tryThis": "Take five slow breaths, in for four and out for six.",
+          "journalPrompt": "How did your body feel afterwards?"
+        },
+        {
+          "id": "m06-l3",
+          "month": 6,
+          "order": 3,
+          "title": "Do nothing, on purpose",
+          "body": "Sitting without a task can feel strange at first. It gives your mind space to sort itself out.",
+          "tryThis": "Sit for five minutes with no phone and no task, just looking around.",
+          "journalPrompt": "What came up when you did nothing?"
+        },
+        {
+          "id": "m06-l4",
+          "month": 6,
+          "order": 4,
+          "title": "Rest your eyes",
+          "body": "Screens tire the eyes and the mind. Looking at something far away for a moment is a simple reset.",
+          "tryThis": "Every hour, look at something in the distance for twenty seconds.",
+          "journalPrompt": "What did you notice when you looked away from the screen?"
+        },
+        {
+          "id": "m06-l5",
+          "month": 6,
+          "order": 5,
+          "title": "Take a slower evening",
+          "body": "An evening that gently slows down helps sleep come more easily. Dim the lights and quiet the noise.",
+          "tryThis": "Make this evening a little slower: soft lights, no hurry.",
+          "journalPrompt": "What helped you slow down tonight?"
+        },
+        {
+          "id": "m06-l6",
+          "month": 6,
+          "order": 6,
+          "title": "Rest in nature",
+          "body": "Green spaces and open sky soothe the mind. Even a single tree or a patch of garden can do it.",
+          "tryThis": "Spend ten minutes somewhere green or open, noticing what you see and hear.",
+          "journalPrompt": "What did the outdoors give you?"
+        },
+        {
+          "id": "m06-l7",
+          "month": 6,
+          "order": 7,
+          "title": "Let a day be unproductive",
+          "body": "Not every day has to count for something. A gentle day can be exactly what you need.",
+          "tryThis": "Choose a part of today to leave unplanned and unmeasured.",
+          "journalPrompt": "What did a gentle stretch of time give you?"
+        },
+        {
+          "id": "m06-l8",
+          "month": 6,
+          "order": 8,
+          "title": "Make sleep a priority",
+          "body": "Good sleep is the foundation of good days. Small, steady habits matter more than one perfect night.",
+          "tryThis": "Pick a time to begin winding down tonight, and keep to it.",
+          "journalPrompt": "What would help you rest better this week?"
+        }
+      ]
+    },
+    {
+      "month": 7,
+      "name": "July",
+      "theme": "Play",
+      "lessons": [
+        {
+          "id": "m07-l1",
+          "month": 7,
+          "order": 1,
+          "title": "Make room for play",
+          "body": "Play is not only for children. Doing something just for the fun of it lifts the spirit and sparks ideas.",
+          "tryThis": "Spend ten minutes on something purely for fun, with no goal.",
+          "journalPrompt": "What felt playful today?"
+        },
+        {
+          "id": "m07-l2",
+          "month": 7,
+          "order": 2,
+          "title": "Be silly on purpose",
+          "body": "A little silliness releases tension and brings us closer to others. Let yourself be a bit ridiculous.",
+          "tryThis": "Do something silly today: a funny voice, a dance, a joke.",
+          "journalPrompt": "What made you laugh?"
+        },
+        {
+          "id": "m07-l3",
+          "month": 7,
+          "order": 3,
+          "title": "Try something new, and small",
+          "body": "New small experiences keep life feeling fresh. A different route, a new food or a new song all count.",
+          "tryThis": "Do one small thing in a new way today.",
+          "journalPrompt": "What was different about doing it a new way?"
+        },
+        {
+          "id": "m07-l4",
+          "month": 7,
+          "order": 4,
+          "title": "Draw, doodle or make",
+          "body": "Making something with your hands, without worrying about the result, is relaxing and joyful.",
+          "tryThis": "Doodle, sketch, cook or build something simple for ten minutes.",
+          "journalPrompt": "What did you make, and how did it feel to make it?"
+        },
+        {
+          "id": "m07-l5",
+          "month": 7,
+          "order": 5,
+          "title": "Revisit a childhood joy",
+          "body": "Something you loved as a child may still bring delight. It might be a game, a song or a snack.",
+          "tryThis": "Do one thing you loved as a child.",
+          "journalPrompt": "What did you love, and how did it feel to return to it?"
+        },
+        {
+          "id": "m07-l6",
+          "month": 7,
+          "order": 6,
+          "title": "Play with someone",
+          "body": "Shared play builds closeness quickly. A game, a walk or a laugh together is enough.",
+          "tryThis": "Play a game or share something light with another person.",
+          "journalPrompt": "What did you enjoy sharing?"
+        },
+        {
+          "id": "m07-l7",
+          "month": 7,
+          "order": 7,
+          "title": "Wander with no goal",
+          "body": "Wandering without a destination lets curiosity lead. You may notice things you usually hurry past.",
+          "tryThis": "Take a short walk with no goal and follow whatever catches your eye.",
+          "journalPrompt": "What caught your eye?"
+        },
+        {
+          "id": "m07-l8",
+          "month": 7,
+          "order": 8,
+          "title": "Laugh at yourself, gently",
+          "body": "Being able to smile at our own mistakes makes life lighter. It is kindness, not mockery.",
+          "tryThis": "When something small goes wrong today, look for the funny side.",
+          "journalPrompt": "What small mishap could you smile about?"
+        }
+      ]
+    },
+    {
+      "month": 8,
+      "name": "August",
+      "theme": "Courage",
+      "lessons": [
+        {
+          "id": "m08-l1",
+          "month": 8,
+          "order": 1,
+          "title": "Courage is small",
+          "body": "Bravery is not only for big moments. It is also saying a hard thing kindly, or trying something new while nervous.",
+          "tryThis": "Do one small thing that makes you slightly nervous.",
+          "journalPrompt": "What small brave thing did you do?"
+        },
+        {
+          "id": "m08-l2",
+          "month": 8,
+          "order": 2,
+          "title": "Feel the fear and begin",
+          "body": "Fear usually comes before action and eases after it. You can feel it and still take the first step.",
+          "tryThis": "Choose something you have been avoiding and take the first tiny step.",
+          "journalPrompt": "What was the first step, and what happened to the fear?"
+        },
+        {
+          "id": "m08-l3",
+          "month": 8,
+          "order": 3,
+          "title": "Speak up kindly",
+          "body": "Your voice matters. Saying what you need or think, with care, builds self-respect.",
+          "tryThis": "Share one honest opinion or need today, kindly.",
+          "journalPrompt": "What did you say, and how did it feel?"
+        },
+        {
+          "id": "m08-l4",
+          "month": 8,
+          "order": 4,
+          "title": "Allow it to be imperfect",
+          "body": "Waiting until you are ready often means waiting forever. Starting imperfectly is how most good things begin.",
+          "tryThis": "Start something today without making it perfect.",
+          "journalPrompt": "What did you begin even though it was not perfect?"
+        },
+        {
+          "id": "m08-l5",
+          "month": 8,
+          "order": 5,
+          "title": "Remember a time you coped",
+          "body": "You have faced hard things before and got through them. Remembering that shows you are stronger than you feel.",
+          "tryThis": "Write about a hard time you handled, and what helped you.",
+          "journalPrompt": "What helped you get through, and what does that tell you?"
+        },
+        {
+          "id": "m08-l6",
+          "month": 8,
+          "order": 6,
+          "title": "Ask for what you need",
+          "body": "Needs left unspoken often go unmet. Asking clearly and gently is a form of courage.",
+          "tryThis": "Ask someone for one thing you need today.",
+          "journalPrompt": "What did you ask for?"
+        },
+        {
+          "id": "m08-l7",
+          "month": 8,
+          "order": 7,
+          "title": "Let yourself be seen",
+          "body": "Showing a little of your real self, such as a worry or a joy, deepens connection.",
+          "tryThis": "Share something honest about yourself with someone you trust.",
+          "journalPrompt": "What did you share, and how did they respond?"
+        },
+        {
+          "id": "m08-l8",
+          "month": 8,
+          "order": 8,
+          "title": "Be proud of trying",
+          "body": "The effort counts, whatever the outcome. Noticing your courage makes the next step easier.",
+          "tryThis": "Name three times this month you tried something, even imperfectly.",
+          "journalPrompt": "What are you proud of trying?"
+        }
+      ]
+    },
+    {
+      "month": 9,
+      "name": "September",
+      "theme": "Connection",
+      "lessons": [
+        {
+          "id": "m09-l1",
+          "month": 9,
+          "order": 1,
+          "title": "Reach out",
+          "body": "A short message to someone you have not spoken to in a while can brighten both your days. It does not need a reason.",
+          "tryThis": "Send a short message to someone you have been thinking of.",
+          "journalPrompt": "Who did you reach out to, and how did it feel?"
+        },
+        {
+          "id": "m09-l2",
+          "month": 9,
+          "order": 2,
+          "title": "Be fully present",
+          "body": "Giving someone your full attention, with no phone, is one of the kindest gifts. They can feel the difference.",
+          "tryThis": "Have one conversation today with your full attention.",
+          "journalPrompt": "What did you notice when you were fully present?"
+        },
+        {
+          "id": "m09-l3",
+          "month": 9,
+          "order": 3,
+          "title": "Ask a better question",
+          "body": "Questions like what was the best part of your day open deeper conversations than how are you.",
+          "tryThis": "Ask someone an open, curious question and listen to the answer.",
+          "journalPrompt": "What did you learn about them?"
+        },
+        {
+          "id": "m09-l4",
+          "month": 9,
+          "order": 4,
+          "title": "Share a meal or a drink",
+          "body": "Sitting together over food or tea builds closeness gently. It does not need to be fancy.",
+          "tryThis": "Share a meal, coffee or tea with someone, or call someone while you eat.",
+          "journalPrompt": "What made the moment feel good?"
+        },
+        {
+          "id": "m09-l5",
+          "month": 9,
+          "order": 5,
+          "title": "Notice the people around you",
+          "body": "Small friendly moments with neighbours, shopkeepers and colleagues add warmth to a day.",
+          "tryThis": "Greet someone you usually pass without a word.",
+          "journalPrompt": "What small connection did you notice?"
+        },
+        {
+          "id": "m09-l6",
+          "month": 9,
+          "order": 6,
+          "title": "Appreciate someone aloud",
+          "body": "People rarely hear the good things we think about them. Telling them costs little and means a lot.",
+          "tryThis": "Tell someone one thing you appreciate about them.",
+          "journalPrompt": "What did you say, and how did they react?"
+        },
+        {
+          "id": "m09-l7",
+          "month": 9,
+          "order": 7,
+          "title": "Be there in hard times",
+          "body": "You do not need the right words. Simply showing up and saying I am here matters most.",
+          "tryThis": "Check in on someone who may be having a hard time.",
+          "journalPrompt": "How could you support someone this week?"
+        },
+        {
+          "id": "m09-l8",
+          "month": 9,
+          "order": 8,
+          "title": "Enjoy your own company",
+          "body": "Connection starts with being comfortable with yourself. Time alone can be rich, not lonely.",
+          "tryThis": "Spend a little time alone doing something you enjoy.",
+          "journalPrompt": "What did you enjoy about your own company?"
+        }
+      ]
+    },
+    {
+      "month": 10,
+      "name": "October",
+      "theme": "Joy in small things",
+      "lessons": [
+        {
+          "id": "m10-l1",
+          "month": 10,
+          "order": 1,
+          "title": "Notice what you are grateful for",
+          "body": "Gratitude is easier to feel when you look for it. Even on ordinary days, there is usually something small to be thankful for.",
+          "tryThis": "Notice three small things today that you are glad of.",
+          "journalPrompt": "What are you grateful for today, and why?"
+        },
+        {
+          "id": "m10-l2",
+          "month": 10,
+          "order": 2,
+          "title": "Savor one small moment",
+          "body": "Joy often passes unnoticed because we hurry. Savoring means pausing for ten to thirty seconds to fully take in something pleasant, such as a warm drink, a kind message or a quiet street.",
+          "tryThis": "Pick one ordinary moment today and stay with it, without your phone.",
+          "journalPrompt": "What small moment did you slow down for today? What did you notice?"
+        },
+        {
+          "id": "m10-l3",
+          "month": 10,
+          "order": 3,
+          "title": "Celebrate small wins",
+          "body": "We often skip over small wins on the way to bigger goals. Noticing them builds confidence and keeps you going.",
+          "tryThis": "At the end of today, name one thing that went well, however small.",
+          "journalPrompt": "What small win can you celebrate today?"
+        },
+        {
+          "id": "m10-l4",
+          "month": 10,
+          "order": 4,
+          "title": "Reframe a harsh thought",
+          "body": "Harsh thoughts feel like facts, but they are just thoughts. You can question them and find a gentler, truer version.",
+          "tryThis": "Catch one harsh thought and rewrite it as you would for a friend.",
+          "journalPrompt": "What harsh thought showed up, and how could you say it more kindly?"
+        },
+        {
+          "id": "m10-l5",
+          "month": 10,
+          "order": 5,
+          "title": "Look after your body",
+          "body": "How you treat your body shapes how you feel. Small kind choices count for more than big plans.",
+          "tryThis": "Do one kind thing for your body today, such as water, a walk or an early night.",
+          "journalPrompt": "What does your body need from you today?"
+        },
+        {
+          "id": "m10-l6",
+          "month": 10,
+          "order": 6,
+          "title": "Connect with someone",
+          "body": "Joy grows when it is shared. A short, warm moment with another person can lift a whole day.",
+          "tryThis": "Reach out to someone with a message, a call or a few kind words.",
+          "journalPrompt": "Who did you connect with, and how did it feel?"
+        },
+        {
+          "id": "m10-l7",
+          "month": 10,
+          "order": 7,
+          "title": "Name what matters to you",
+          "body": "Knowing what you value helps you choose with more ease. Small daily choices can then match what matters most.",
+          "tryThis": "Write down three things that matter most to you, and one way to honour them today.",
+          "journalPrompt": "What matters to you, and how did you honour it today?"
+        },
+        {
+          "id": "m10-l8",
+          "month": 10,
+          "order": 8,
+          "title": "Let go of comparison",
+          "body": "Comparing your inside to other people's outside is rarely fair. Your path is your own.",
+          "tryThis": "When you catch yourself comparing today, pause and name one thing that is good about your own path.",
+          "journalPrompt": "When did you compare yourself today, and what would you say to yourself instead?"
+        }
+      ]
+    },
+    {
+      "month": 11,
+      "name": "November",
+      "theme": "Thankfulness and giving",
+      "lessons": [
+        {
+          "id": "m11-l1",
+          "month": 11,
+          "order": 1,
+          "title": "Count three good things",
+          "body": "Noticing what went well, however small, trains your mind to see the good. It works best as a daily habit.",
+          "tryThis": "Write down three good things from today.",
+          "journalPrompt": "What three things went well, and why?"
+        },
+        {
+          "id": "m11-l2",
+          "month": 11,
+          "order": 2,
+          "title": "Thank the unseen helpers",
+          "body": "Many people make our days easier without our noticing. Seeing them makes life feel more connected.",
+          "tryThis": "Thank someone whose work you usually take for granted.",
+          "journalPrompt": "Whose help do you usually overlook?"
+        },
+        {
+          "id": "m11-l3",
+          "month": 11,
+          "order": 3,
+          "title": "Write a thank-you note",
+          "body": "A written note can be kept and reread. Even a few lines can make someone's week.",
+          "tryThis": "Write a short note of thanks to someone, and send or hand it over.",
+          "journalPrompt": "Who did you write to, and what did you say?"
+        },
+        {
+          "id": "m11-l4",
+          "month": 11,
+          "order": 4,
+          "title": "Give without expecting",
+          "body": "Giving freely, without waiting for a return, brings its own quiet joy. It can be time, a smile or a small gift.",
+          "tryThis": "Give something small today, such as time, help or a gift, with no strings attached.",
+          "journalPrompt": "What did you give, and how did you feel?"
+        },
+        {
+          "id": "m11-l5",
+          "month": 11,
+          "order": 5,
+          "title": "Share what you have",
+          "body": "Sharing food, time or knowledge with others often makes it feel like more, not less.",
+          "tryThis": "Share something you have, such as a snack, a tip or an hour.",
+          "journalPrompt": "What did you share?"
+        },
+        {
+          "id": "m11-l6",
+          "month": 11,
+          "order": 6,
+          "title": "Be grateful for ordinary things",
+          "body": "Water, light, a roof, a friend. The things we expect are the things we would miss most.",
+          "tryThis": "Pause to appreciate three ordinary things you rely on.",
+          "journalPrompt": "What ordinary thing are you most grateful for?"
+        },
+        {
+          "id": "m11-l7",
+          "month": 11,
+          "order": 7,
+          "title": "Find the gift in a hard thing",
+          "body": "Hard times can leave us something, such as strength or clarity. Looking for it is not pretending it was easy.",
+          "tryThis": "Think of a difficulty and name one thing it gave you.",
+          "journalPrompt": "What did a hard time teach you or give you?"
+        },
+        {
+          "id": "m11-l8",
+          "month": 11,
+          "order": 8,
+          "title": "Pass it on",
+          "body": "Gratitude grows when it is passed on. Telling someone what you are thankful for invites them to notice their own.",
+          "tryThis": "Tell someone one thing you are thankful for today.",
+          "journalPrompt": "What did you share, and what happened?"
+        }
+      ]
+    },
+    {
+      "month": 12,
+      "name": "December",
+      "theme": "Reflection and renewal",
+      "lessons": [
+        {
+          "id": "m12-l1",
+          "month": 12,
+          "order": 1,
+          "title": "Look back gently",
+          "body": "A calm look back at the year shows both difficulties and growth. You can see it all without judging.",
+          "tryThis": "Write a few lines on how this year felt overall.",
+          "journalPrompt": "How would you describe this year in a few words?"
+        },
+        {
+          "id": "m12-l2",
+          "month": 12,
+          "order": 2,
+          "title": "Name your highlights",
+          "body": "Moments that made you smile are worth keeping. Naming them fills the year with warmth.",
+          "tryThis": "List five moments from this year that you would like to keep.",
+          "journalPrompt": "Which highlight feels most precious?"
+        },
+        {
+          "id": "m12-l3",
+          "month": 12,
+          "order": 3,
+          "title": "Honour what was hard",
+          "body": "Hard parts of the year deserve a moment of acknowledgement. You made it through, and that counts.",
+          "tryThis": "Name one hard thing from this year and one way you got through it.",
+          "journalPrompt": "What helped you through the hardest part?"
+        },
+        {
+          "id": "m12-l4",
+          "month": 12,
+          "order": 4,
+          "title": "Notice what you learned",
+          "body": "Every year teaches us something, about ourselves, about others and about what matters. Writing it down helps it stay.",
+          "tryThis": "Write three things you learned about yourself this year.",
+          "journalPrompt": "What did you learn that you would like to remember?"
+        },
+        {
+          "id": "m12-l5",
+          "month": 12,
+          "order": 5,
+          "title": "Let go of what is finished",
+          "body": "Some things have run their course. Letting go makes room for what comes next.",
+          "tryThis": "Choose one habit, worry or thing you are ready to leave in this year.",
+          "journalPrompt": "What are you ready to leave behind?"
+        },
+        {
+          "id": "m12-l6",
+          "month": 12,
+          "order": 6,
+          "title": "Thank the people",
+          "body": "Our years are shaped by the people in them. Telling them is a lovely way to close the year.",
+          "tryThis": "Thank three people who made your year better.",
+          "journalPrompt": "Who made a difference to your year?"
+        },
+        {
+          "id": "m12-l7",
+          "month": 12,
+          "order": 7,
+          "title": "Rest before you plan",
+          "body": "Before looking ahead, allow some rest. Plans made from calm are kinder than plans made from pressure.",
+          "tryThis": "Do something restful and put off any planning.",
+          "journalPrompt": "What does rest look like for you this week?"
+        },
+        {
+          "id": "m12-l8",
+          "month": 12,
+          "order": 8,
+          "title": "Plant a gentle intention",
+          "body": "Instead of strict resolutions, choose a soft intention for the year ahead. Let it guide you, not push you.",
+          "tryThis": "Write one gentle intention for next year, in a single sentence.",
+          "journalPrompt": "What gentle intention would you like to carry forward?"
+        }
+      ]
+    }
+  ]
+}

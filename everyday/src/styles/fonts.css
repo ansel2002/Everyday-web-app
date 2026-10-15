@@ -1,0 +1,17 @@
+/* Self-hosted variable fonts (latin subset only), bundled at build time so the app works offline.
+   Family names match tokens.css: 'Fraunces' for display, 'Figtree' for body. */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/fraunces/files/fraunces-latin-opsz-normal.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 900;
+  src: url('@fontsource-variable/figtree/files/figtree-latin-wght-normal.woff2') format('woff2-variations');
+}

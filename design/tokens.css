@@ -1,0 +1,27 @@
+/* Everyday design tokens. Direction A, Morning Horizon. */
+:root{
+  --bg:#eef3ef; --card:#fbfdfb; --ink:#17353a; --muted:#4a666a; --line:#c9d8d0;
+  --tint:#fbefc9; --soft:#e0ebe4; --field:#ffffff; --nav-line:#d5e1da;
+  --sun:#f0b429; --on-sun:#17353a;
+  --primary:#17353a; --on-primary:#ffffff;
+  --sky:#f7eccb; --hill-1:#b7d4c7; --hill-2:#2f6a69;
+  --shadow:0 2px 0 #dbe6df,0 12px 28px rgba(23,53,58,.08);
+  --font-display:'Fraunces',Georgia,serif; --font-body:'Figtree',system-ui,sans-serif;
+  --fs-display:32px; --fs-title:28px; --fs-heading:19px; --fs-body:17px; --fs-label:15px; --fs-caption:14px; --fs-tab:12px;
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px;
+  --r-field:16px; --r-note:18px; --r-card:28px; --r-pill:999px; --tap:44px;
+}
+:root[data-theme="dark"]{
+  --bg:#0f2226; --card:#173238; --ink:#eef5f0; --muted:#a3bdbb; --line:#2b4a50;
+  --tint:#21444a; --soft:#173238; --field:#0f2226; --nav-line:#2b4a50;
+  --primary:#f0b429; --on-primary:#17353a;
+  --sky:#21444a; --hill-1:#2d6064; --hill-2:#112f33; --shadow:none;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --bg:#0f2226; --card:#173238; --ink:#eef5f0; --muted:#a3bdbb; --line:#2b4a50;
+  --tint:#21444a; --soft:#173238; --field:#0f2226; --nav-line:#2b4a50;
+  --primary:#f0b429; --on-primary:#17353a;
+  --sky:#21444a; --hill-1:#2d6064; --hill-2:#112f33; --shadow:none;
+}}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

@@ -1,0 +1,193 @@
+/* Shared UI components. */
+
+.card {
+  background: var(--card);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow);
+  padding: 20px 22px;
+}
+
+.card-heading { font: 700 18px var(--font-display); }
+.card-caption { font-size: var(--fs-caption); color: var(--muted); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  min-height: 52px;
+  padding: 0 var(--sp-5);
+  border: 0;
+  border-radius: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  font: 600 16px var(--font-body);
+  text-decoration: none;
+  transition: transform 120ms var(--ease);
+}
+.btn:active { transform: scale(.98); }
+.btn--primary { background: var(--primary); color: var(--on-primary); }
+.btn--sun { background: var(--sun); color: var(--on-sun); font-weight: 700; }
+.btn--outline {
+  min-height: var(--tap);
+  padding: 0 20px;
+  border-radius: 22px;
+  border: 1.5px solid var(--ink);
+  background: none;
+  color: var(--ink);
+  font-size: var(--fs-label);
+}
+.btn--dashed {
+  min-height: 56px;
+  border-radius: 28px;
+  border: 1.5px dashed var(--muted);
+  background: none;
+  color: var(--ink);
+}
+
+.link-btn {
+  min-height: var(--tap);
+  padding: 0 var(--sp-2);
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: 600 var(--fs-label) var(--font-body);
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-link {
+  align-self: flex-start;
+  min-height: var(--tap);
+  padding: 0 var(--sp-3) 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  color: var(--ink);
+  font: 600 16px var(--font-body);
+  text-decoration: none;
+}
+.back-link:hover { text-decoration: underline; }
+
+/* ---------- Form fields ---------- */
+.field {
+  width: 100%;
+  border-radius: var(--r-field);
+  /* Muted, not the pale line colour: field edges need 3:1 contrast. */
+  border: 1px solid var(--muted);
+  background: var(--field);
+  color: var(--ink);
+  padding: 14px;
+  font: 400 16px/1.5 var(--font-body);
+}
+.field::placeholder { color: var(--muted); opacity: 1; }
+
+/* ---------- Page header ---------- */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--sp-4);
+}
+.page-header__text { display: flex; flex-direction: column; }
+.page-header__title { font: 700 var(--fs-display)/1.1 var(--font-display); }
+.page-header__title:focus,
+[tabindex="-1"]:focus { outline: none; box-shadow: none; }
+.page-header__subtitle { margin-top: 6px; font-size: var(--fs-caption); color: var(--muted); }
+
+@media (min-width: 768px) {
+  .page-header { align-items: flex-end; }
+  .page-header__subtitle { order: -1; margin-top: 0; }
+  .page-header__title { margin-top: var(--sp-1); font-size: 36px; }
+}
+
+/* ---------- Streak ---------- */
+.streak { display: flex; flex-direction: column; }
+.streak__value { font: 700 var(--fs-display)/1 var(--font-display); }
+.streak__label { font-size: var(--fs-caption); color: var(--muted); }
+
+.streak--header { text-align: right; }
+.streak--rail { text-align: center; }
+.streak--rail .streak__value { font-size: var(--fs-title); }
+.streak--rail .streak__label { font-size: var(--fs-tab); }
+.streak--sidebar { flex-direction: row; align-items: baseline; gap: var(--sp-2); }
+
+/* ---------- Privacy note ---------- */
+.privacy-note {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: var(--fs-caption);
+  line-height: 1.4;
+  color: var(--muted);
+}
+.privacy-note--center { justify-content: center; }
+
+/* ---------- Progress segments ---------- */
+.segments { display: flex; gap: 6px; }
+.segment { flex: 1; height: 12px; border-radius: 6px; border: 1.5px solid var(--muted); }
+.segment--done { background: var(--sun); border-color: var(--sun); }
+
+/* ---------- Mood chip ---------- */
+.mood-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 8px;
+  border: 1px solid var(--muted);
+  border-radius: 16px;
+  font: 600 13px var(--font-body);
+}
+
+/* ---------- Choice buttons: chips and pills (aria-pressed) ---------- */
+.chip {
+  flex: none;
+  min-height: var(--tap);
+  padding: 0 var(--sp-4);
+  border-radius: 22px;
+  border: 1px solid var(--muted);
+  background: var(--field);
+  color: var(--ink);
+  font: 500 var(--fs-label) var(--font-body);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.chip[aria-pressed="true"] {
+  border: 2px solid var(--selected-border);
+  background: var(--sun);
+  color: var(--on-sun);
+  font-weight: 700;
+}
+.chip-row { display: flex; gap: var(--sp-2); overflow-x: auto; padding: 2px; margin: -2px; }
+
+/* ---------- Development toolbar ---------- */
+.dev-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-top: var(--sp-4); }
+.dev-theme {
+  display: flex;
+  gap: var(--sp-1);
+  padding: var(--sp-1);
+  border: 1.5px dashed var(--muted);
+  border-radius: var(--r-pill);
+}
+.dev-theme button {
+  min-height: var(--tap);
+  padding: 0 var(--sp-4);
+  border: 0;
+  border-radius: var(--r-pill);
+  background: none;
+  font: 500 var(--fs-label) var(--font-body);
+}
+.dev-theme button[aria-pressed="true"] { background: var(--primary); color: var(--on-primary); font-weight: 700; }
+.dev-pill {
+  min-height: var(--tap);
+  padding: 0 var(--sp-4);
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px dashed var(--muted);
+  border-radius: var(--r-pill);
+  background: none;
+  color: var(--ink);
+  font: 500 var(--fs-label) var(--font-body);
+  text-decoration: none;
+}

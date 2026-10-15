@@ -1,0 +1,153 @@
+/* Responsive shell.
+   Phone (< 768px): bottom tab bar.  Tablet (768–1099px): 100px icon rail.  Desktop (>= 1100px): 260px sidebar. */
+
+.shell { min-height: 100vh; min-height: 100dvh; display: flex; }
+
+.page {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: 28px var(--sp-5) calc(var(--tabbar-h) + var(--sp-4) + env(safe-area-inset-bottom));
+  animation: page-in 180ms var(--ease);
+}
+.page:focus { outline: none; }
+
+/* Tab change: 180ms cross-fade with a 6px rise (removed under reduced motion by tokens.css). */
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ---------- Phone: bottom tab bar ---------- */
+.tabbar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 10;
+  display: flex;
+  height: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+  padding: 0 var(--sp-2) env(safe-area-inset-bottom);
+  background: var(--card);
+  border-top: 1px solid var(--nav-line);
+}
+
+.tab {
+  flex: 1;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-1);
+  color: var(--muted);
+  font: 500 var(--fs-tab) var(--font-body);
+  text-decoration: none;
+}
+.tab[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: inset 0 3px 0 var(--sun);
+}
+.tab[aria-current="page"]:focus-visible { box-shadow: inset 0 3px 0 var(--sun), 0 0 0 2px var(--ink); }
+
+/* ---------- Tablet: icon rail ---------- */
+.rail, .sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex: none;
+  display: none;
+  flex-direction: column;
+  gap: 28px;
+  padding: var(--sp-6) var(--sp-3);
+  background: var(--card);
+  border-right: 1px solid var(--nav-line);
+}
+
+.rail { width: 100px; align-items: center; }
+
+.rail__logo {
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: 50%;
+  background: var(--sun);
+  color: var(--on-sun);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rail__nav, .sidebar__nav { display: flex; flex-direction: column; gap: 6px; }
+/* Desktop: the quieter tools, smaller and below a line, so the four tabs stay the focus. */
+.sidebar__more { display: flex; flex-direction: column; gap: 2px; padding-top: var(--sp-4); margin-top: calc(-1 * var(--sp-3)); border-top: 1px solid var(--nav-line); }
+.side-tab.side-tab--small { min-height: var(--tap); font-size: var(--fs-label); }
+.rail__nav { align-items: center; }
+
+.rail-tab {
+  width: 76px;
+  min-height: 68px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-1);
+  color: var(--muted);
+  font: 500 var(--fs-tab) var(--font-body);
+  text-decoration: none;
+}
+
+.rail__foot, .sidebar__foot { margin-top: auto; display: flex; flex-direction: column; gap: var(--sp-3); }
+.rail__foot { align-items: center; }
+
+/* ---------- Desktop: sidebar ---------- */
+.sidebar { width: 260px; padding: var(--sp-6) 20px; }
+
+.sidebar__wordmark { font: 700 var(--fs-title) var(--font-display); }
+
+.side-tab {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 var(--sp-4);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--muted);
+  font: 500 16px var(--font-body);
+  text-decoration: none;
+}
+
+/* Active tab on rail and sidebar: background step + weight + ink colour (plus aria-current). */
+.rail-tab[aria-current="page"],
+.side-tab[aria-current="page"] {
+  background: var(--nav-active);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.tab:hover, .rail-tab:hover, .side-tab:hover { color: var(--ink); }
+
+/* ---------- Breakpoints ---------- */
+@media (min-width: 768px) {
+  .tabbar { display: none; }
+  .rail { display: flex; }
+  .page { padding: var(--sp-6); gap: var(--sp-5); }
+}
+
+@media (min-width: 1100px) {
+  .rail { display: none; }
+  .sidebar { display: flex; }
+  .page { padding: 40px; max-width: 1160px; }
+}
+
+/* Show/hide helpers. They only ever hide, with !important so they win over component display rules.
+   only-phone: < 768 · only-wide: >= 768 · not-desktop: < 1100 · only-desktop: >= 1100 */
+@media (max-width: 767.98px) { .only-wide { display: none !important; } }
+@media (min-width: 768px) { .only-phone { display: none !important; } }
+@media (max-width: 1099.98px) { .only-desktop { display: none !important; } }
+@media (min-width: 1100px) { .not-desktop { display: none !important; } }

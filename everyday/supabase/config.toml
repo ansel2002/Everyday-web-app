@@ -1,0 +1,9 @@
+project_id = "raefbogputkvicevfrwa"
+
+# Called by pg_cron with a shared secret header, not a user's sign-in.
+[functions.send-reminders]
+verify_jwt = false
+
+# Called by the signed-in person; the function checks their token itself.
+[functions.delete-account]
+verify_jwt = true
