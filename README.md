@@ -2,7 +2,7 @@
 
 **A calm, private self-development web app.** A few minutes a day: a small lesson, a mood check-in, gentle habits and a short journal. It is meant to feel like a quiet morning: warm, encouraging, never judgmental.
 
-**Live app:** https://everyday-quiet-mornings.netlify.app
+**Live app:** https://everyday-quiet-mornings.netlify.app · **Working on the code:** [CONTRIBUTING.md](CONTRIBUTING.md)
 
 <p>
   <img src="docs/screenshots/phone-today.png" width="230" alt="Today screen on a phone: today's lesson, mood check-in and habit summary">

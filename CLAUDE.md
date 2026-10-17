@@ -1,5 +1,10 @@
 # Everyday: build brief
 
+> **Current state (2026-10-17):** steps 1 to 6 below are built and live at https://everyday-quiet-mornings.netlify.app.
+> Since the original brief, data moved from on-device only to **end-to-end encrypted sync on Supabase** (the owner's decision); see the updated Privacy principle.
+> Sign-in is Google or an email link. **How to work in this repo** (setup, the store and encryption rules, how to add screens and data, and what to build next): [CONTRIBUTING.md](CONTRIBUTING.md).
+> In short: read and write data only through `src/data/store.ts`; never send or save user text unencrypted; use `npm run dev:fake` for development; and `npm test`, `npm run build` and `npm run test:e2e` must pass.
+
 A calm, private self-development app. One person, a few minutes a day, mostly on a phone. Small daily lessons, a short journal, and gentle habits. It should feel like a quiet morning: warm, encouraging, never judgmental. Not a productivity tool, not a clinical wellness app.
 
 Design reference is in `design/`. The `.dc.html` files are Claude Design artboards: read them as source for exact sizes, colours and copy (they need not render standalone). `design/canvas.json` lists every board with its title. Tokens are in `design/tokens.css`. Lesson content is in `data/lessons.seed.json`.
