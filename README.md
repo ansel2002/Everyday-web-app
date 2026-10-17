@@ -360,16 +360,27 @@ When you add a custom domain, also add it to Supabase **Authentication → URL C
 
 ```bash
 cd everyday
-npm test
+npm test              # unit tests
+npm run dev:fake      # in one terminal
+npm run test:e2e      # in another: every feature, in a real headless browser
 ```
 
-**Automated tests** (19 in total):
+**Unit tests** (19 in total):
 - The streak rule: forgiven days, two missed days, month and year boundaries, daylight-saving changes.
 - The encryption: a wrong passphrase fails, ciphertext hides the text, accounts can't read each other's records, and record IDs are stable.
 
-**Checked by hand in the browser:**
-- Every screen at phone, tablet and desktop size, in both themes.
-- Keyboard navigation and focus.
-- Reduced motion.
-- Offline use.
-- Sign-in, passphrase, PIN and new-device flows against the fake cloud.
+**End-to-end test** (`e2e/run.mjs`, 22 checks). It drives headless Edge or Chrome through every feature against the fake cloud, with no test framework to install. Any error from the app's code fails the run.
+- Sign-in with Google and email, including the email checks; choosing a passphrase, including its checks.
+- Today: the lesson card, mark done and undo, the streak, and the mood check-in.
+- Lessons: statuses, the month picker, lesson detail and insights.
+- Habits: empty state, idea chips, adding, done and undo, streaks, and the remove dialog. The habit summary on Today.
+- Journal (including the mood carried by each entry), weekly review, mood insights, the focus timer, breathing and the wind-down.
+- Settings: theme and export.
+- Data surviving a reload.
+- PIN lock: a wrong PIN, the right PIN, and a forgotten PIN.
+- A new device restoring everything with the passphrase.
+- Sign out and back in.
+- At phone, tablet and desktop size: the right navigation, no sideways scrolling, and 44px tap targets.
+- Deleting everything.
+
+**Checked by hand:** keyboard navigation and focus, reduced motion, offline use, the security headers on the live site, and the server's security rules from outside (signed-out visitors can read and write nothing).

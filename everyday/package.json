@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "node --experimental-strip-types --no-warnings --test src/**/*.test.ts",
     "deploy": "npm run build && npx --yes netlify-cli deploy --site everyday-quiet-mornings --prod --dir dist --no-build",
-    "dev:fake": "vite --mode fake"
+    "dev:fake": "vite --mode fake",
+    "test:e2e": "node e2e/run.mjs"
   },
   "dependencies": {
     "@fontsource-variable/figtree": "^5.3.0",
