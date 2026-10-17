@@ -39,6 +39,8 @@ export interface Cloud {
   getUser(): Promise<CloudUser | null>;
   onAuthChange(callback: () => void): () => void;
   sendMagicLink(email: string): Promise<void>;
+  /** Leaves the page for Google's sign-in, then comes back signed in. */
+  signInWithGoogle(): Promise<void>;
   signOut(): Promise<void>;
   getVault(): Promise<VaultRow | null>;
   saveVault(vault: VaultRow): Promise<void>;
@@ -55,6 +57,14 @@ const URL = import.meta.env.VITE_SUPABASE_URL as string | undefined;
 const KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string | undefined;
 
 export const cloudConfigured = Boolean(URL && KEY);
+
+/** Show "Continue with Google" only once the Google provider is set up in Supabase. */
+export const googleSignInEnabled = import.meta.env.VITE_GOOGLE_SIGN_IN === 'on' || !cloudConfigured;
+
+/** Where sign-in (email link or Google) comes back to: this app, without the hash route. */
+function returnUrl() {
+  return `${window.location.origin}${window.location.pathname}`;
+}
 
 function supabaseCloud(client: SupabaseClient): Cloud {
   async function userId() {
@@ -86,8 +96,12 @@ function supabaseCloud(client: SupabaseClient): Cloud {
     },
 
     async sendMagicLink(email) {
-      const redirect = `${window.location.origin}${window.location.pathname}`;
-      const { error } = await client.auth.signInWithOtp({ email, options: { emailRedirectTo: redirect } });
+      const { error } = await client.auth.signInWithOtp({ email, options: { emailRedirectTo: returnUrl() } });
+      if (error) throw new Error(error.message);
+    },
+
+    async signInWithGoogle() {
+      const { error } = await client.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: returnUrl() } });
       if (error) throw new Error(error.message);
     },
 

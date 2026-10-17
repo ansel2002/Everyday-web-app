@@ -601,3 +601,24 @@
 .gate__form .btn { margin-top: var(--sp-2); }
 .gate__center { align-self: center; }
 .btn:disabled { opacity: .7; cursor: default; }
+
+/* "Continue with Google": light or dark, as Google's sign-in guidelines allow. */
+.btn--google {
+  background: #ffffff;
+  color: #1f1f1f;
+  border: 1px solid #747775;
+  gap: var(--sp-3);
+}
+:root[data-theme="dark"] .btn--google { background: #131314; color: #e3e3e3; border-color: #8e918f; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .btn--google { background: #131314; color: #e3e3e3; border-color: #8e918f; }
+}
+
+.gate__or {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--muted);
+  font-size: var(--fs-caption);
+}
+.gate__or::before, .gate__or::after { content: ""; flex: 1; border-top: 1px solid var(--line); }

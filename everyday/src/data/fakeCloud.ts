@@ -55,6 +55,15 @@ export function fakeCloud(): Cloud {
       listeners.forEach((fn) => setTimeout(fn, 600)); // as if the link was opened
     },
 
+    async signInWithGoogle() {
+      // Pretend the Google round trip happened.
+      await delay();
+      const state = load();
+      state.user = { id: 'fake-google-reader', email: 'reader@gmail.example' };
+      save(state);
+      listeners.forEach((fn) => setTimeout(fn, 300));
+    },
+
     async signOut() {
       const state = load();
       state.user = null;

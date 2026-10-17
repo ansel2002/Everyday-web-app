@@ -103,6 +103,10 @@ export async function sendMagicLink(email: string) {
   await currentCloud().sendMagicLink(email);
 }
 
+export async function signInWithGoogle() {
+  await currentCloud().signInWithGoogle();
+}
+
 export async function choosePassphrase(passphrase: string) {
   if (phase.name !== 'create-passphrase') return;
   const user = phase.user;

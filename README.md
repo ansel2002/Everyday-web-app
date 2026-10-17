@@ -45,7 +45,7 @@ The layout adapts to the screen: a **bottom tab bar** on phones, a **narrow icon
   <img src="docs/screenshots/phone-passphrase.png" width="230" alt="Choose a passphrase screen with a warning to write it down">
 </p>
 
-- **Sign in** with an email magic link. There is no password to remember.
+- **Sign in with Google** in one tap, or with an **email link** as a backup. There is no password to remember either way. Email links are sent through Gmail, not Supabase's rate-limited test service (see [docs/sign-in-setup.md](docs/sign-in-setup.md)).
 - **The first time,** you choose a **passphrase**. It is the key to your encrypted data, and it never leaves your device. The screen says plainly that a lost passphrase cannot be recovered.
 - **On a new device,** you sign in and enter the same passphrase, and your data arrives from the cloud.
 - **PIN lock (optional):** with it on, the app asks for a PIN when it opens. The data on the device stays encrypted until you enter it. A forgotten PIN can be replaced by entering your passphrase.
@@ -173,7 +173,7 @@ These quieter tools sit in the desktop sidebar, behind **More** on the tablet ra
 | App state | An in-memory **store** with `useSyncExternalStore` (`src/data/store.ts`) | Screens read decrypted data synchronously and update live. |
 | Local storage | **Dexie** (IndexedDB) | The encrypted local copy that keeps the app working offline. |
 | Encryption | The **Web Crypto API**: PBKDF2-SHA-256, AES-GCM, HKDF, HMAC | End-to-end encryption with the browser's own audited cryptography, and no crypto libraries. |
-| Backend | **Supabase**: Auth (magic link), Postgres with row level security, Edge Functions (Deno), `pg_cron` + `pg_net`, Vault | Sign-in, encrypted storage, scheduled reminders and account deletion. |
+| Backend | **Supabase**: Auth (Google sign-in and email links sent through Gmail SMTP), Postgres with row level security, Edge Functions (Deno), `pg_cron` + `pg_net`, Vault | Sign-in, encrypted storage, scheduled reminders and account deletion. |
 | Offline and install | **vite-plugin-pwa** + **Workbox**, with a custom service worker (`src/sw/sw.ts`) | Precaches the app so it opens offline, and receives push reminders. |
 | Reminders | **Web Push** with VAPID keys, sent by the `web-push` library in an Edge Function | Nudges arrive even when the app is closed. |
 | Hosting | **Netlify** | Static hosting over HTTPS, with security headers set in `netlify.toml`. |
@@ -314,13 +314,14 @@ That uses a built-in **fake cloud** stored in the browser. The "magic link" sign
 | `npm run preview` | Serve the production build locally |
 | `npm run deploy` | Build and publish to Netlify |
 
-**Environment variables** (in `everyday/.env.local`; all three are public by design):
+**Environment variables** (in `everyday/.env.local`; all are public by design):
 
 | Variable | Meaning |
 |---|---|
 | `VITE_SUPABASE_URL` | Your Supabase project URL |
 | `VITE_SUPABASE_PUBLISHABLE_KEY` | The project's publishable key. Leave it empty to use the fake cloud. |
 | `VITE_VAPID_PUBLIC_KEY` | The public half of the Web Push key pair |
+| `VITE_GOOGLE_SIGN_IN` | Set to `on` once Google is enabled in Supabase, to show "Continue with Google" |
 
 ---
 
@@ -331,6 +332,7 @@ That uses a built-in **fake cloud** stored in the browser. The "magic link" sign
 3. **Function secrets** (Dashboard → Edge Functions → Secrets): `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` (`mailto:` followed by your email) and `CRON_SECRET`. Generate the VAPID pair with `npx web-push generate-vapid-keys`.
 4. **Cron secret:** run the line in `everyday/supabase/cron.sql` in the SQL editor, with your `CRON_SECRET` pasted in.
 5. **Auth URLs** (Authentication → URL Configuration): set the Site URL to your live address, and add it and `http://localhost:5173` as redirect URLs.
+6. **Sign-in:** connect Gmail as the email sender and turn on Google sign-in. Step by step: [docs/sign-in-setup.md](docs/sign-in-setup.md).
 
 Secrets live only in Supabase and in a git-ignored `everyday/supabase/.env.secrets`. They are never committed.
 
